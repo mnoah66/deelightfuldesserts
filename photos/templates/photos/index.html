@@ -1,0 +1,106 @@
+{% extends 'photos/base.html' %}
+{% load static %}
+
+{% block content %}
+
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column mb-10 text-dark">
+                <div class="text-center">
+                <img src="{% static 'assets/img/Dee-lightful Desserts-logo/cover.png' %}" style="max-width: 300px; max-height: auto;" alt="">
+            </div>
+                <!-- Masthead Heading-->
+                
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section the-goods" id="the-goods">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">The Goods</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" style="cursor:default !important;">
+                            <div class="text-center text-uppercase text-secondary pb-20">
+                                <h5>Cupcakes</h5>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/actual_cupcake2.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" style="cursor:default !important;">
+                            <div class="text-center text-uppercase text-secondary pb-20">
+                                <h5>Cake pops</h5>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cakepop.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" style="cursor:default !important;">
+                            <div class="text-center text-uppercase text-secondary pb-20">
+                                <h5>Cakes</h5>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cake_.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item" style="cursor:default !important;">
+                            <div class="text-center text-uppercase text-secondary mb-0">
+                                <h5>Hot Cocoa Bombs</h5>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cocoa_bombs.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item" style="cursor:default !important;">
+                            <div class="text-center text-uppercase text-secondary mb-0">
+                                <h5>Cookies</h5>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cookies.png' %}" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Fresh, home-made desserts for all occasions.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Please allow 48 hour notice for all orders.</p></div>
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}

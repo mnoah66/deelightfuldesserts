@@ -1,0 +1,8 @@
+myenv/
+*.pyc
+__pycache
+.DS_Store
+docker-compose-prod.yml
+.env
+db.sqlite3
+venv
