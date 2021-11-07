@@ -29,7 +29,7 @@ def contact(request):
             new_line = '\n'
             message = f"Name: {name}{new_line}Phone: {phone}{new_line}Email: {from_email}{new_line}Message: {message}"
             try:
-                send_mail("[DESSERTS] Contact Form", message, None, ['mnoah66@gmail.com'],
+                send_mail("[DESSERTS] Contact Form", message, None, ['deanna@deelightfuldesserts.com'],
     fail_silently=False,)
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')

@@ -18,7 +18,7 @@ import environ
 
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, False)
+    DEBUG=(bool, False),
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -89,13 +89,29 @@ WSGI_APPLICATION = 'photoshare.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+DEVELOPMENT_MODE = env("DEVELOPMENT_MODE") == "TRUE"
 
-DATABASES = {
+if DEVELOPMENT_MODE:
+    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+else:
+    DATABASES = {
+    'default': {
+        'ENGINE': env('SQL_ENGINE'),
+        'NAME': env('SQL_DATABASE'),
+        'USER': env('SQL_USER'),
+        'PASSWORD': env('SQL_PASSWORD'),
+        'HOST': env('SQL_HOST'),
+        'PORT': env('SQL_PORT'),
+    }
+}
+
+
+
 
 
 # Password validation
@@ -170,3 +186,9 @@ EMAIL_PORT = 587 # new
 EMAIL_USE_TLS = True # new
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+if not DEVELOPMENT_MODE:
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_BROWSER_XSS_FILTER = True
