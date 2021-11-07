@@ -1,6 +1,10 @@
 {% extends 'photos/base.html' %}
 {% load static %}
 
+{% block title %}
+<title>Deelightful Desserts | Home</title>
+{% endblock  %}
+
 {% block content %}
 
         <!-- Masthead-->
@@ -33,7 +37,7 @@
                             <div class="text-center text-uppercase text-secondary pb-20">
                                 <h5>Cupcakes</h5>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/actual_cupcake2.png' %}" alt="..." />
+                            <a href="{% url 'cupcakes' %}"><img class="img-fluid" src="{% static 'assets/img/portfolio/actual_cupcake2.png' %}" alt="..." /></a>
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -42,7 +46,7 @@
                             <div class="text-center text-uppercase text-secondary pb-20">
                                 <h5>Cake pops</h5>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cakepop.png' %}" alt="..." />
+                            <a href="{% url 'cake-pops' %}"><img class="img-fluid" src="{% static 'assets/img/portfolio/cakepop.png' %}" alt="..." /></a>
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -51,7 +55,7 @@
                             <div class="text-center text-uppercase text-secondary pb-20">
                                 <h5>Cakes</h5>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cake_.png' %}" alt="..." />
+                            <a href="{% url 'cakes' %}"><img class="img-fluid" src="{% static 'assets/img/portfolio/cake_.png' %}" alt="..." /></a>
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
@@ -60,7 +64,7 @@
                             <div class="text-center text-uppercase text-secondary mb-0">
                                 <h5>Hot Cocoa Bombs</h5>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cocoa_bombs.png' %}" alt="..." />
+                            <a href="{% url 'hot-cocoa-bombs' %}"><img class="img-fluid" src="{% static 'assets/img/portfolio/cocoa_bombs.png' %}" alt="..." /></a>
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
@@ -69,7 +73,7 @@
                             <div class="text-center text-uppercase text-secondary mb-0">
                                 <h5>Cookies</h5>
                             </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cookies.png' %}" alt="..." />
+                            <a href="{% url 'cookies' %}"><img class="img-fluid" src="{% static 'assets/img/portfolio/cookies.png' %}" alt="..." /></a>
                         </div>
                     </div>
                 </div>

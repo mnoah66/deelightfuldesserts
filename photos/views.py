@@ -16,6 +16,17 @@ def index(request):
 def menu(request):
     return render(request, 'photos/menu.html')
 
+def cupcakes(request):
+    return render(request, 'photos/cupcakes.html')
+def cakes(request):
+    return render(request, 'photos/cakes.html')
+def cookies(request):
+    return render(request, 'photos/cookies.html')
+def hot_cocoa_bombs(request):
+    return render(request, 'photos/hot_cocoa_bombs.html')
+def cake_pops(request):
+    return render(request, 'photos/cake_pops.html')
+
 def contact(request):
     if request.method == 'GET':
         form = ContactForm()
