@@ -3,17 +3,90 @@
 
 {% block title %}
 <title>Deelightful Desserts | Cakes</title>
-{% endblock  %}
+{% endblock %}
 
 {% block content %}
 
 <section class="page-section" id="portfolio">
   <div class="container">
-    <h3 class="pt-4">Cakes</h3>
-
-    <small>Coming soon...</small>
-</div>  
-
+    <p>
+    <h3 class="pt-4">Cakes</h3><a class="btn btn-primary btn-lg" href="{% url 'order' %}">Click here to order a custom
+      cake!</a></p>
+    <div class="col-md">
+      <div class="row">
+        <!--ADD CLASSES HERE d-flex align-items-stretch-->
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/unicorn.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+        <!--ADD CLASSES HERE d-flex align-items-stretch-->
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/blue_pink.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/purple.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/rainbow.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/fuzzyman.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/orange.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/wild.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/smooth.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+          <div class="card">
+            <a href="" class="">
+              <img src="{% static 'assets/img/portfolio/photos/chocolate.PNG' %}" class="card-img-top"
+                alt="Card Image"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </section>
 
 {% endblock %}
