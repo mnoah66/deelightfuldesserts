@@ -18,7 +18,7 @@ import environ
 
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, False),
+    DEBUG=(bool, False)
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,7 +37,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1', '.ngrok.io', '192.168.1.56','localhost']
+ALLOWED_HOSTS = tuple(env.list('ALLOWED_HOSTS', default=['www.deelightfuldesserts.com','deelightfuldesserts.com']))
 
 
 # Application definition
